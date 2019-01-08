@@ -9,5 +9,5 @@ newdt$dateTime<-as.POSIXct(paste(newdt$Date,newdt$Time),format="%Y-%m-%d %H:%M:%
 newdt$Global_active_power<-as.numeric(newdt$Global_active_power)
 
 png("plot2.png",width=480,height=480,units='px')
-plot(newdt$dateTime,newdt$Global_active_power/500,type='l',ylab="Global Active Power (kilowatts)",xlab=NULL)
+plot(newdt$dateTime,newdt$Global_active_power/500,type='l',ylab="Global Active Power (kilowatts)",xlab="")
 dev.off()
